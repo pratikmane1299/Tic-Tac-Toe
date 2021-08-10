@@ -39,7 +39,7 @@ h1 {
   background-color: #56baed;
 }
 
-.players .slider {
+/* .players .slider {
   position: absolute;
   top: 0;
   left: 0;
@@ -48,42 +48,7 @@ h1 {
   background-color: #56baed;
   border-radius: .5rem;
   z-index: 5px;
-}
-
-.board {
-  margin: 1rem 0;
-  padding: 1rem;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 0.5rem 0.5rem;
-}
-
-.box {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: 600;
-  background-color: #fff;
-  color: #56baed;
-  border: 0;
-  border-radius: 0.5rem;
-  outline: none;
-}
-
-.box-0,.box-1,.box-2, .box-3,.box-4,.box-5 {
-  /* border-right: 1px solid #ccc; */
-  border-bottom: 1px solid #ccc;
-}
-
-.box-0,.box-3,.box-6,.box-1,.box-4,.box-7 {
-  border-right: 1px solid #ccc;
-}
+} */
 
 .reset-btn {
   padding: 0.5rem 1rem;

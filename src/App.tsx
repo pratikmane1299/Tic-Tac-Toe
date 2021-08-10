@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 
+import Board from './components/Board';
+import Box from './components/Box';
+
 function checkWinner(board: string[]) {
   const possibleCombinations = [
     [0,1,2],
@@ -58,13 +61,11 @@ function App(props: {}) {
         <span className={isXNext ? 'active' : ''}>X's Turn</span>
         <span className={!isXNext ? 'active' : ''}>O's Turn</span>
       </div>
-      <div className="board">
+      <Board>
         {board.map((value, i) => (
-          <div onClick={(e) => handleOnBoxClicked(i)} className={`box box-${i}`} key={i}>
-            <span>{value}</span>
-          </div>
+          <Box idx={i} value={value} onClick={handleOnBoxClicked} />
         ))}
-      </div>
+      </Board>
       <button className="reset-btn" onClick={() => {
         setBoard(initialBoardState);
         setIsXNext(true);
