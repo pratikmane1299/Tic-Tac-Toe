@@ -1,0 +1,35 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* padding: 1rem; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.players {
+  margin-top: 1rem;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.players span {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  color: #56baed;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.players span.active {
+  color: #fff;
+  background-color: #56baed;
+}
